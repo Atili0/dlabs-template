@@ -1,0 +1,18 @@
+﻿<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>HTML</Name>
+    <Description>HTML</Description>
+    <Icon>icon.png</Icon>
+    <TemplateID>62a6a0c7-fd2e-4f59-81b2-1192f02a07f3</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>My_Html1.html</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+  
+    <ProjectItem TargetFileName="$fileinputname$.html" ReplaceParameters="true">My_Html1.html</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
+

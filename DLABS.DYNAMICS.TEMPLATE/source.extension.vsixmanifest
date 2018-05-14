@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="DLABS.DYNAMICS.TEMPLATE.14fec941-2b96-4bc8-bcb8-807222517e02" Version="1.0" Language="en-US" Publisher="Deloitte Labs." />
+        <DisplayName>Deloitte Labs - DYN365 Template</DisplayName>
+        <Description xml:space="preserve">Empty VSIX Project.</Description>
+        <MoreInfo>http://www.dexrm.com</MoreInfo>
+        <GettingStartedGuide>index.html</GettingStartedGuide>
+        <ReleaseNotes>index.html</ReleaseNotes>
+        <PreviewImage>deloitte.png</PreviewImage>
+        <Tags>deloitte; temlate; deloittebusines</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="HTML" d:TargetPath="|HTML;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="JavaScript" d:TargetPath="|JavaScript;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="DLABS.CLIENT.VCRM.PLUGIN" d:TargetPath="|DLABS.CLIENT.VCRM.PLUGIN;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="DLABS.CLIENT.VCRM.WK" d:TargetPath="|DLABS.CLIENT.VCRM.WK;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="DLABS.WEBRESOURCES" d:TargetPath="|DLABS.WEBRESOURCES;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>
