@@ -36,10 +36,37 @@
          group as the part of a menu contained between two lines. The parent of a group
          must be a menu. -->
     <Groups>
-      <Group guid="guiddlab_commandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      <Group guid="guiddlab_commandPackageCmdSet" id="SolutionMenuGroup" priority="0xFFFE">
+        <Parent guid="guiddlab_commandPackageCmdSet" id="IDM_VS_MENU_TOOLS"/>
       </Group>
+      
+       <Group guid="guiddlab_commandPackageCmdSet" id="NuGetSdkSubMenuGroup" priority="0xFFFF">
+        <Parent guid="guiddlab_commandPackageCmdSet" id="NuGetSdkSubMenu"/>
+      </Group>
+      
+      <!--<Group guid="guiddlab_commandPackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guiddlab_commandPackageCmdSet" id="IDM_VS_MENU_TOOLS"/>
+      </Group>-->
     </Groups>
+
+    <Menus>
+      <!-- Main menu -->
+      <Menu guid="guiddlab_commandPackageCmdSet" id="TopLevelMenu" priority="0x0100" type="Menu">
+        <Parent guid="guiddlab_commandPackageCmdSet" id="SolutionMenuGroup"/>
+        <Strings>
+          <ButtonText>Dlabs 365 Developer</ButtonText>
+        </Strings>
+      </Menu>
+    
+      <!-- NuGet SDK Tools sub-menu -->
+      <Menu guid="guiddlab_commandPackageCmdSet" id="NuGetSdkSubMenu" priority="0xFFFE" type="Menu">
+        <Parent guid="guiddlab_commandPackageCmdSet" id="TopLevelMenuGroup"/>
+        <Strings>
+          <ButtonText>NuGet SDK Tools</ButtonText>
+          <CommandName>NuGet SDK Tools</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
 
     <!--Buttons section. -->
     <!--This section defines the elements the user can interact with, like a menu command or a button
@@ -80,6 +107,14 @@
     <GuidSymbol name="guiddlab_commandPackageCmdSet" value="{7549c1a5-8353-4146-948a-2c2395c05367}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="dlab_commandId" value="0x0100" />
+
+      <IDSymbol name="TopLevelMenu" value="0x0110" />
+      <IDSymbol name="TopLevelMenuGroup" value="0x0200" />
+      <IDSymbol name="SolutionMenuGroup" value="0x1030" />
+    
+      <IDSymbol name="NuGetSdkSubMenu" value="0x1100"/>
+      <IDSymbol name="NuGetSdkSubMenuGroup" value="0x0105"/>
+    
     </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{9ca74e43-a264-4503-9fb3-a47c0e339444}" >
@@ -89,6 +124,7 @@
       <IDSymbol name="bmpPicX" value="4" />
       <IDSymbol name="bmpPicArrows" value="5" />
       <IDSymbol name="bmpPicStrikethrough" value="6" />
+      
     </GuidSymbol>
   </Symbols>
 </CommandTable>
