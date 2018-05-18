@@ -1,29 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
         <Identity Id="DLABS.DYNAMICS.TEMPLATE.14fec941-2b96-4bc8-bcb8-807222517e02" Version="1.0" Language="en-US" Publisher="Deloitte Labs." />
         <DisplayName>Deloitte Labs - DYN365 Template</DisplayName>
         <Description xml:space="preserve">Empty VSIX Project.</Description>
         <MoreInfo>http://www.dexrm.com</MoreInfo>
+        <License>License.txt</License>
         <GettingStartedGuide>index.html</GettingStartedGuide>
         <ReleaseNotes>index.html</ReleaseNotes>
+        <Icon>deloitte.png</Icon>
         <PreviewImage>deloitte.png</PreviewImage>
-        <Tags>deloitte; temlate; deloittebusines</Tags>
+        <Tags>deloitte; temlate; deloittebusines;Dynamics 365, D365, Dynamics 365 Customer Engagement,</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-    </Dependencies>
+      <Dependency Id="Microsoft.VisualStudio.MPF.15.0" DisplayName="Visual Studio MPF 15.0" d:Source="Installed" Version="[15.0]" />
+  </Dependencies>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="HTML" d:TargetPath="|HTML;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="JavaScript" d:TargetPath="|JavaScript;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="DLABS.CLIENT.VCRM.PLUGIN" d:TargetPath="|DLABS.CLIENT.VCRM.PLUGIN;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="DLABS.CLIENT.VCRM.WK" d:TargetPath="|DLABS.CLIENT.VCRM.WK;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="DLABS.WEBRESOURCES" d:TargetPath="|DLABS.WEBRESOURCES;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
     </Assets>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.NuGet" Version="[15.6.27309.0,16.0)" DisplayName="NuGet package manager" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.JavaScript.TypeScript" Version="[15.7.27520.0,16.0)" DisplayName="JavaScript and TypeScript language support" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[15.0.27205.0,16.0)" DisplayName="C# and Visual Basic" />
+        <Prerequisite Id="Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions" Version="[15.0.27005.2,16.0)" DisplayName="ASP.NET and web development" />
     </Prerequisites>
 </PackageManifest>

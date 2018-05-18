@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>DLABS.CLIENT.VCRM.WK</Name>
-    <Description>DLABS.CLIENT.VCRM.WK</Description>
+    <Name>Dlabs Workflow</Name>
+    <Description>Template para el desarrollo de Workflow en Dyna365</Description>
     <Icon>dlabs.ico</Icon>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
