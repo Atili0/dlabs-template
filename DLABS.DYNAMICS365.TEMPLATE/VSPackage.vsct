@@ -74,15 +74,15 @@
 
   <Symbols>
     <!-- This is the package guid. -->
-    <GuidSymbol name="guidVSPackage" value="{94bfdc08-00a7-4d7e-8346-1536ec9f84eb}" />
+    <GuidSymbol name="guidVSPackage" value="{7c9e5581-7062-4a6c-8040-a08f77fcfe20}" />
 
     <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidVSPackageCmdSet" value="{10ddf21f-9488-4670-9e74-538c5b96c599}">
+    <GuidSymbol name="guidVSPackageCmdSet" value="{e7b08457-0b34-467e-8a3c-accf862d63ed}">
       <IDSymbol name="MyMenuGroup" value="0x1020" />
       <IDSymbol name="dlabs_commandId" value="0x0100" />
     </GuidSymbol>
 
-    <GuidSymbol name="guidImages" value="{40af1d8e-ddf2-4a20-adb2-2203180802b9}" >
+    <GuidSymbol name="guidImages" value="{e4f778cc-c348-4b11-b1d4-b78a14eb2162}" >
       <IDSymbol name="bmpPic1" value="1" />
       <IDSymbol name="bmpPic2" value="2" />
       <IDSymbol name="bmpPicSearch" value="3" />

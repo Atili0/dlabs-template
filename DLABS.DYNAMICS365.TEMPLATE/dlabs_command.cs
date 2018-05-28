@@ -3,7 +3,9 @@ using System.ComponentModel.Design;
 using System.Globalization;
 using System.Threading;
 using System.Threading.Tasks;
+using EnvDTE;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Events;
 using Microsoft.VisualStudio.Shell.Interop;
 using Task = System.Threading.Tasks.Task;
 
@@ -22,7 +24,7 @@ namespace DLABS.DYNAMICS365.TEMPLATE
         /// <summary>
         /// Command menu group (command set GUID).
         /// </summary>
-        public static readonly Guid CommandSet = new Guid("10ddf21f-9488-4670-9e74-538c5b96c599");
+        public static readonly Guid CommandSet = new Guid("e7b08457-0b34-467e-8a3c-accf862d63ed");
 
         /// <summary>
         /// VS Package that provides this command, not null.
@@ -77,9 +79,12 @@ namespace DLABS.DYNAMICS365.TEMPLATE
 
             OleMenuCommandService commandService = await package.GetServiceAsync((typeof(IMenuCommandService))) as OleMenuCommandService;
             Instance = new dlabs_command(package, commandService);
-
-
         }
+
+        private static IVsSolution _vsSolution;
+        
+
+        
 
         /// <summary>
         /// This function is the callback used to execute the command when the menu item is clicked.

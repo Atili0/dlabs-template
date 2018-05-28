@@ -42,7 +42,7 @@ namespace DLABS.DYNAMICS365.TEMPLATE
         /// <summary>
         /// VSPackage GUID string.
         /// </summary>
-        public const string PackageGuidString = "94bfdc08-00a7-4d7e-8346-1536ec9f84eb";
+        public const string PackageGuidString = "7c9e5581-7062-4a6c-8040-a08f77fcfe20";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="VSPackage"/> class.
