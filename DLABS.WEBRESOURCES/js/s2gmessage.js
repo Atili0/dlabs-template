@@ -1,0 +1,7 @@
+﻿if (typeof (S2G_MESSAGE) == "undefined") { S2G_MESSAGE = { __namespace: true }; }
+
+S2G_MESSAGE.ESP = {
+    MSG_WHEN_ASSOCIATE_PRODUCT_IN_SALESOREDER = "This is an INFORMATION notification.",
+    MSG_CODE_WHEN_ASSOCIATE_PRODUCT_IN_SALESOREDER = "MSG_CODE_ASSOCIATE_PRODUCT"
+
+}
