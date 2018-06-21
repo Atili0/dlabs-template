@@ -13,10 +13,7 @@ For formcontext more information in https://docs.microsoft.com/es-es/dynamics365
 for executionContext more information in https://docs.microsoft.com/es-es/dynamics365/customer-engagement/developer/clientapi/clientapi-execution-context
 */
 
-var FormParameter = {
-    _executionContext = "",
-    _formContext = ""
-},
+'use strict';
 
 var $fileinputname$ = (function () {
     //Private properties & methods
@@ -53,16 +50,23 @@ var $fileinputname$ = (function () {
 
 })();
 
+/**
+ * Returns the square of the number passed to the function.
+ *  for formcontext more information in https://docs.microsoft.com/es-es/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context
+ *  for executionContext more information in https://docs.microsoft.com/es-es/dynamics365/customer-engagement/developer/clientapi/clientapi-execution-context
+ * @param {number} input Specifies the value to be calculated.
+ */
+
 function main_load(pExecutionContext) {
     require.config({
         paths: {
             "jquery": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min",
-            "s2gfunction": "../WebResources/<folder>/js/s2gfunction"
+            "s2gfunction": "../WebResources/<folder>/js/v9_s2gfunction"
         }
     });
 
-    FormParameter._executionContext = pExecutionContext;
-    FormParameter._formContext = executionContext.getFormContext();
+    S2G_V9.Context._executionContext = pExecutionContext;
+    S2G_V9.Context._formContext = executionContext.getFormContext();
 
     require(['jquery', 's2gfunction'], function () {
         relax_descuentos.Load();
