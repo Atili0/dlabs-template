@@ -1,4 +1,24 @@
-﻿var $fileinputname$ = (function () {
+﻿/*
+Copyright 2018 Deloitte Labs.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+*/
+
+/// <reference path="v9_s2gfunction.js" />
+
+/*
+Enter a suitable multi line comment here. 
+For formcontext more information in https://docs.microsoft.com/es-es/dynamics365/customer-engagement/developer/clientapi/clientapi-form-context
+for executionContext more information in https://docs.microsoft.com/es-es/dynamics365/customer-engagement/developer/clientapi/clientapi-execution-context
+*/
+
+var FormParameter = {
+    _executionContext = "",
+    _formContext = ""
+},
+
+var $fileinputname$ = (function () {
     //Private properties & methods
 
     //var x = 0;
@@ -33,13 +53,16 @@
 
 })();
 
-function main_load() {
+function main_load(pExecutionContext) {
     require.config({
         paths: {
             "jquery": "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min",
             "s2gfunction": "../WebResources/<folder>/js/s2gfunction"
         }
     });
+
+    FormParameter._executionContext = pExecutionContext;
+    FormParameter._formContext = executionContext.getFormContext();
 
     require(['jquery', 's2gfunction'], function () {
         relax_descuentos.Load();
