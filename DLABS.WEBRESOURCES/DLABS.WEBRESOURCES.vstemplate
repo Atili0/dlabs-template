@@ -21,6 +21,26 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
       </Folder>
+      <Folder Name="html" TargetFolderName="html">
+        
+      </Folder>
+      <Folder Name="img" TargetFolderName="img">
+        <ProjectItem ReplaceParameters="true" TargetFileName="deloitte.png">deloitte.png</ProjectItem>
+      </Folder>
+      <Folder Name="js" TargetFolderName="js">
+        <Folder Name="libs" TargetFolderName="libs">
+          <ProjectItem ReplaceParameters="true" TargetFileName="r.js">r.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="require.js">require.js</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="s2gmessage.js">s2gmessage.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="v9_s2gfunction.js">v9_s2gfunction.js</ProjectItem>
+      </Folder>
+      <Folder Name="resx" TargetFolderName="resx">
+
+      </Folder>
+      <Folder Name="solution" TargetFolderName="solution">
+
+      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
     </Project>
   </TemplateContent>
