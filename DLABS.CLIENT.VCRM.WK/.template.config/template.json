@@ -1,0 +1,23 @@
+{
+  "author": "Deloitte Labs.",
+  "classifications": [],
+  "description": "template description",
+  "name": "",
+  "defaultName": "DLABS.CLIENT.VCRM.WK",
+  "identity": "DLABS.CLIENT.VCRM.WK",
+  "groupIdentity": "Dlabs.Template",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "Dlabs.",
+  "sourceName": "DLABS.CLIENT.VCRM.WK",
+  "guids": [
+    "adbb0781-648d-4a84-81f1-780e70cdf64b"
+  ],
+  "primaryOutputs": [
+    {
+      "path": "DLABS.CLIENT.VCRM.WK.csproj"
+    }
+  ]
+}

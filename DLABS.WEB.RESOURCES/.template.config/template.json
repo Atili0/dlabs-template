@@ -1,0 +1,23 @@
+{
+  "author": "Deloitte Labs.",
+  "classifications": [],
+  "description": "template description",
+  "name": "Deloitte Labs Manage Resource",
+  "defaultName": "Dlabs.WebResource",
+  "identity": "Dlabs.WebManage.Resource",
+  "groupIdentity": "Dlabs.Template",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "shortName": "Dlabs.",
+  "sourceName": "DLABS.WEB.RESOURCES",
+  "guids": [
+    "{DCB015F4-6B55-49EE-86B7-0EA01E66E8BE}"
+  ],
+  "primaryOutputs": [
+    {
+      "path": "DLABS.WEB.RESOURCES.csproj"
+    }
+  ]
+}

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-$if$ ($targetframeworkversion$ >= 3.5)using System.Linq;
-$endif$using System.Text;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace $safeprojectname$
+namespace DLABS.CLIENT.VCRM.WK
 {
-	public class Class1
-{
-}
+    public class Class1
+    {
+    }
 }
