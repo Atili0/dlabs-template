@@ -3,10 +3,10 @@
   <TemplateData>
     <Name></Name>
     <Description>template description</Description>
-    <TemplateID>DLABS.CLIENT.VCRM.WK</TemplateID>
-    <DefaultName>DLABS.CLIENT.VCRM.WK</DefaultName>
+    <TemplateID>DELOITTE.ITEM.JAVASCRIPT</TemplateID>
+    <DefaultName>DELOITTE.ITEM.JAVASCRIPT</DefaultName>
     
-    <Icon>dlabs.ico</Icon>
+    <Icon>project-icon.png</Icon>
     
     <ProjectType>CSharp</ProjectType>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
@@ -21,7 +21,7 @@
     <CustomParameters>
       <CustomParameter Name = "$language$" Value="CSharp" />
       <CustomParameter Name = "$uistyle$" Value="none"/>
-      <CustomParameter Name = "$groupid$" Value="Dlabs.Template" />
+      <CustomParameter Name = "$groupid$" Value="DELOITTE.TEMPLATE" />
       <CustomParameter Name = "SideWaffleNewProjNode" Value="CSharp\Deloitte"/>
     </CustomParameters>
   </TemplateContent>

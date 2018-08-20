@@ -8,5 +8,6 @@ namespace DLABS.CLIENT.VCRM.WK
 {
     public class Class1
     {
+        //TEST
     }
 }
