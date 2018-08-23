@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ADBB0781-648D-4A84-81F1-780E70CDF64B}</ProjectGuid>
+    <ProjectGuid>{A29E5D8B-44C0-4713-BB87-25CE796FEE66}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DLABS.CLIENT.VCRM.WK</RootNamespace>
-    <AssemblyName>DLABS.CLIENT.VCRM.WK</AssemblyName>
+    <RootNamespace>DLABS.CLIENT.VCRM.PLUGIN</RootNamespace>
+    <AssemblyName>DLABS.CLIENT.VCRM.PLUGIN</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ENTITY_DESCRIPTION.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="STAGE_MSG_ENTITY_DESCRIPTION.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="dlabs.ico" />

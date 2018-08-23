@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DLABS.CLIENT.VCRM.WK
 {
-    public class Class1
+    public class ENTITY_DESCRIPTION
     {
         //TEST
     }
