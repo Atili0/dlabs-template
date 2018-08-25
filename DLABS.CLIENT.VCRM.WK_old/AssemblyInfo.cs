@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DLABS.CLIENT.VCRM.PLUGIN")]
+[assembly: AssemblyTitle("$projectname$")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Atilio Rosas")]
-[assembly: AssemblyProduct("DLABS.CLIENT.VCRM.PLUGIN")]
-[assembly: AssemblyCopyright("Copyright © Atilio Rosas 2018")]
+[assembly: AssemblyCompany("$registeredorganization$")]
+[assembly: AssemblyProduct("$projectname$")]
+[assembly: AssemblyCopyright("Copyright © $registeredorganization$ $year$")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a13048f1-9ac9-4421-8dbd-928b35e9bbd7")]
+[assembly: Guid("$guid1$")]
 
 // Version information for an assembly consists of the following four values:
 //

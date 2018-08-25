@@ -1,38 +1,51 @@
-﻿using Microsoft.Xrm.Sdk;
+﻿using Dex.Trace;
+using Microsoft.Xrm.Sdk;
 using System;
 
 namespace DLABS.CLIENT.VCRM.PLUGIN
 {
     public class PluginClass : IPlugin
-{
-    #region Secure/Unsecure Configuration Setup
-    private string _secureConfig = null;
-    private string _unsecureConfig = null;
-
-    public PluginClass(string unsecureConfig, string secureConfig)
     {
-        _secureConfig = secureConfig;
-        _unsecureConfig = unsecureConfig;
-    }
-    #endregion
+        #region Secure/Unsecure Configuration Setup
+        private string _secureConfig = null;
+        private string _unsecureConfig = null;
 
-    public void Execute(IServiceProvider serviceProvider)
-    {
-        ITracingService tracer = (ITracingService)serviceProvider.GetService(typeof(ITracingService));
-        IPluginExecutionContext context = (IPluginExecutionContext)serviceProvider.GetService(typeof(IPluginExecutionContext));
-        IOrganizationServiceFactory factory = (IOrganizationServiceFactory)serviceProvider.GetService(typeof(IOrganizationServiceFactory));
-        IOrganizationService service = factory.CreateOrganizationService(context.UserId);
+        private ITrace _trace;
 
-        try
+        public PluginClass(string unsecureConfig, string secureConfig)
         {
-            Entity entity = (Entity)context.InputParameters["Target"];
-
-            //TODO: Do stuff
+            _secureConfig = secureConfig;
+            _unsecureConfig = unsecureConfig;
         }
-        catch (Exception e)
+        #endregion
+
+        public void Execute(IServiceProvider serviceProvider)
         {
-            throw new InvalidPluginExecutionException(e.Message);
+            ITracingService tracer = (ITracingService)serviceProvider.GetService(typeof(ITracingService));
+            IPluginExecutionContext context = (IPluginExecutionContext)serviceProvider.GetService(typeof(IPluginExecutionContext));
+            IOrganizationServiceFactory factory = (IOrganizationServiceFactory)serviceProvider.GetService(typeof(IOrganizationServiceFactory));
+            IOrganizationService service = factory.CreateOrganizationService(context.UserId);
+
+            try
+            {
+                _trace = new Trace(service, this.GetType().Name)
+                {
+                    TracingService = tracer
+                };
+
+                //USE
+                ///_trace.Info("") -> information 
+                ///_trace.Error(e) -> save error and description
+
+                Entity entity = (Entity)context.InputParameters["Target"];
+
+                //TODO: Do stuff
+            }
+            catch (Exception e)
+            {
+                _trace.Error(e);
+                //throw new InvalidPluginExecutionException(e.Message);
+            }
         }
     }
-}
 }

@@ -4,6 +4,9 @@
         <Identity Id="VSIX_Deloitte_Template.01c6478c-f718-4fa6-9b83-b0dcdfbf8e08" Version="1.0" Language="en-US" Publisher="Atilio Rosas" />
         <DisplayName>VSIX_Deloitte_Template</DisplayName>
         <Description>Empty VSIX Project.</Description>
+        <License>License.txt</License>
+        <Icon>dlabs.ico</Icon>
+        <PreviewImage>dlabs.ico</PreviewImage>
     </Metadata>
     <Installation>
         <InstallationTarget Version="[15.0,16.0)" Id="Microsoft.VisualStudio.Community" />

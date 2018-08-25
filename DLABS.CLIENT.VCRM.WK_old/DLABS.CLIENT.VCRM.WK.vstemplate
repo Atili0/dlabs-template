@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>DLABS.CLIENT.VCRM.WK_old</Name>
+    <Description>DLABS.CLIENT.VCRM.WK_old</Description>
+    <Icon>DLABS.CLIENT.VCRM.WK_old.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>bec67f90-4d03-465e-a83a-098fceab867a</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DLABS.CLIENT.VCRM.WK_old</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">Class1.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

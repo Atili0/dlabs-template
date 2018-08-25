@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" 
+            xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>DLABS.CLIENT.VCRM.PLUGIN</Name>
+    <Description>DLABS.CLIENT.VCRM.PLUGIN</Description>
+    <Icon>DLABS.CLIENT.VCRM.PLUGIN.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>31e5a0aa-6a1c-4221-91e8-17979a2f65de</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DLABS.CLIENT.VCRM.PLUGIN</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" OpenInEditor="true">STAGE_MSG_ENTITY_DESCRIPTION.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="dlabs_key.snk">s2g_key.snk</ProjectItem>
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="Node" Value="CSharp\Deloitte\"/>
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages>
+      <package id="XrmUtils.CrmSdk.PluginExtensions" version="1.0.1.2" />
+    </packages>
+  </WizardData>
+</VSTemplate>
