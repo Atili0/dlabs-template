@@ -4,7 +4,7 @@
   <TemplateData>
     <Name>DLABS.CLIENT.VCRM.PLUGIN</Name>
     <Description>DLABS.CLIENT.VCRM.PLUGIN</Description>
-    <Icon>DLABS.CLIENT.VCRM.PLUGIN.ico</Icon>
+    <Icon>dlabs.ico</Icon>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
     <SortOrder>1000</SortOrder>
