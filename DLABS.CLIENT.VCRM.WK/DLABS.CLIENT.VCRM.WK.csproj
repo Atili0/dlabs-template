@@ -82,7 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="AssemblyInfo.cs" />
-    <None Include="Class1.cs" />
+    <None Include="ENTITY_DESCRIPTION.cs" />
     <None Include="packages.config" />
     <None Include="ProjectTemplate.csproj" />
   </ItemGroup>

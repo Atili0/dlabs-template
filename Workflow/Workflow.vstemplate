@@ -14,8 +14,10 @@
     <References>
       <Reference>
         <Assembly>System</Assembly>
+        <Assembly>Microsoft.Xrm.Sdk.Workflow</Assembly>
+        <Assembly>MMicrosoft.Xrm.Sdk</Assembly>
       </Reference>
     </References>
-    <ProjectItem ReplaceParameters="true">Class.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true">ENTITY_DESCRIPTION.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>

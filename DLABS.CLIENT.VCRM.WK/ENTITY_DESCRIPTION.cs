@@ -5,7 +5,7 @@ using System.Activities;
 
 namespace DLABS.CLIENT.VCRM.WK
 {
-    public class Class1 : CodeActivity
+    public class ENTITY_DESCRIPTION : CodeActivity
     {
         protected override void Execute(CodeActivityContext executionContext)
 {
