@@ -86,7 +86,6 @@
     <None Include="AssemblyInfo.cs" />
     <None Include="packages.config" />
     <None Include="ProjectTemplate.csproj" />
-    <None Include="DLABS.CLIENT.VCRM.PLUGIN.ico" />
     <None Include="s2g_key.snk" />
   </ItemGroup>
   <ItemGroup>

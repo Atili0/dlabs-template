@@ -85,7 +85,6 @@
     <None Include="Class1.cs" />
     <None Include="packages.config" />
     <None Include="ProjectTemplate.csproj" />
-    <None Include="DLABS.CLIENT.VCRM.WK.ico" />
   </ItemGroup>
   <ItemGroup>
     <VSTemplate Include="DLABS.CLIENT.VCRM.WK.vstemplate" />
