@@ -60,7 +60,7 @@
     <VSTemplate Include="HTML.vstemplate" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="icon.png" />
+    <Content Include="dlabs.ico" />
     <Content Include="My_Html1.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

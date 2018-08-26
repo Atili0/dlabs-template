@@ -3,7 +3,7 @@
   <TemplateData>
     <Name>Workflow</Name>
     <Description>Workflow</Description>
-    <Icon>Workflow.ico</Icon>
+    <Icon>dlabs.ico</Icon>
     <TemplateID>43706df1-86d3-4679-ae74-55e6a5183c65</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>

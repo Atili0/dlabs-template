@@ -42,13 +42,19 @@
  		$endif$
 		<Reference Include="System.Data"/>
 		<Reference Include="System.Xml"/>
-    <Reference Include="Microsoft.Xrm.Sdk"/>
-    <Reference Include="Dex.Trace"/>
 	</ItemGroup>
 	<ItemGroup>
-		<Compile Include="STAGE_MSG_ENTITY_DESCRIPTION.cs" />
-
 		<Compile Include="Properties\AssemblyInfo.cs" />
+    <Folder Include="html\" />
+    <Folder Include="img\" />
+    <Folder Include="js\" />
+    <Item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="" Include="js\s2gmessage.js"/>
+    <Item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="" Include="js\v9_s2gfunction.js"/>
+    <Folder Include="js\libs\" />
+    <Item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="" Include="js\libs\r.js" />
+    <Item xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="" Include="js\libs\require.js" />
+    <Folder Include="resx\" />
+    <Folder Include="solution\" />
 	</ItemGroup>
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

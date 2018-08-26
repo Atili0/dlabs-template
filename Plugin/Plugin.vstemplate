@@ -3,7 +3,7 @@
   <TemplateData>
     <Name>Plugin</Name>
     <Description>Plugin</Description>
-    <Icon>Plugin.ico</Icon>
+    <Icon>dlabs.ico</Icon>
     <TemplateID>95e5fdfd-3dbb-4ccb-ae5d-aede2cf007d5</TemplateID>
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>

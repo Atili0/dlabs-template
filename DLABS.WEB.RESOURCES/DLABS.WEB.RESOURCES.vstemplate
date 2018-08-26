@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Deloitte Labs. Template Manage Resources.</Name>
+    <Description>DLABS.WEB.RESOURCES</Description>
+    <Icon>dlabs.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>98205120-bd22-426d-bc26-2ad754a79cec</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DLABS.WEB.RESOURCES</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ProjectTemplate.csproj" File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="dlabs.ico">dlabs.ico</ProjectItem>
+      <Folder Name="html" TargetFolderName="html" />
+      <Folder Name="img" TargetFolderName="img">
+        <ProjectItem ReplaceParameters="false" TargetFileName="deloitte.png">deloitte.png</ProjectItem>
+      </Folder>
+      <Folder Name="js" TargetFolderName="js">
+        <Folder Name="libs" TargetFolderName="libs">
+          <ProjectItem ReplaceParameters="true" TargetFileName="r.js">r.js</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="require.js">require.js</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="s2gmessage.js">s2gmessage.js</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="v9_s2gfunction.js">v9_s2gfunction.js</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="resx" TargetFolderName="resx" />
+      <Folder Name="solution" TargetFolderName="solution" />
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="Node" Value="CSharp\Deloitte\"/>
+    </CustomParameters>
+  </TemplateContent>
+</VSTemplate>

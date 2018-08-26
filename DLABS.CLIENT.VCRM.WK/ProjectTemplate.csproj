@@ -42,9 +42,14 @@
  		$endif$
 		<Reference Include="System.Data"/>
 		<Reference Include="System.Xml"/>
-	</ItemGroup>
+    <Reference Include="Microsoft.Xrm.Sdk"/>
+    <Reference Include="Microsoft.Xrm.Sdk.Workflow"/>
+    <Reference Include="System.Activities"/>
+
+    
+  </ItemGroup>
 	<ItemGroup>
-		<Compile Include="Class1.cs" />
+		<Compile Include="ENTITY_DESCRIPTION.cs" />
 
 		<Compile Include="Properties\AssemblyInfo.cs" />
 	</ItemGroup>

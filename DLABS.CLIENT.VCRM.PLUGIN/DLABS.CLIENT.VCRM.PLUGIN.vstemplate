@@ -2,7 +2,7 @@
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" 
             xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
   <TemplateData>
-    <Name>DLABS.CLIENT.VCRM.PLUGIN</Name>
+    <Name>Deloitte Labs. Template Custom Plugin.</Name>
     <Description>DLABS.CLIENT.VCRM.PLUGIN</Description>
     <Icon>dlabs.ico</Icon>
     <ProjectType>CSharp</ProjectType>
