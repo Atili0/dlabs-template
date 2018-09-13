@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>JsRibbon</Name>
+    <Description>JsRibbon</Description>
+    <Icon>JsRibbon.ico</Icon>
+    <TemplateID>693cc8be-1c90-4202-8484-c2855c87b7db</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    
+  </TemplateData>
+  <TemplateContent>
+    <References/>
+    <ProjectItem TargetFileName="My_Script1.js" ReplaceParameters="true">My_Script1.js</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
