@@ -60,7 +60,7 @@
     <VSTemplate Include="JavaScript.vstemplate" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dlabs.ico" />
+    <Content Include="kpmg.ico" />
     <Content Include="My_Script1.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
